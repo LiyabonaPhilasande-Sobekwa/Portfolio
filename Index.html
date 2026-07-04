@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            </nav>
+            <div class="header-text">
+                <p>Test Analyst | Automation Engineer</p>
+                <h1>Hi, I'm <span>Liyabona Sobekwa</span><br> Building quality software <br> through testing </h1>
+                <div class="hero-buttons">
+                <br>
+                <a href="CV/Liyabona_Sobekwa_CV.pdf" target="_blank" class="btn">
+                <i class="fa-solid fa-file"></i> View CV
+                </a>
+                <a href="https://www.linkedin.com/in/liyabona-sobekwa-3948461b1" target="_blank" class="btn btn2">
+                <i class="fa-brands fa-linkedin"></i> LinkedIn
+                </a>
+              </div>
+            </div>
+        </div>
+    </div>
+    <!-----------about------------->
+    <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="Images/WhatsApp Image 2025-11-15 at 17.55.29.jpeg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>I'm a Test Analyst with experience in both manual and automation testing. My work focuses on identifying defects early, improving software quality, and creating maintainable automated test suites using Java, Selenium, Cucumber, and TestNG. I enjoy solving complex testing challenges and continuously expanding my skills across UI, API, and test automation.</p>
+
+                       <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                       </div>
+                       <div class="tab-contents active-tab "id="skills">
+                        <ul>
+                            <li><span>Automation</span><br>Java . Selenium . TestNG . Cucumber . Maven</li>
+                            <li><span>Manual Testing</span><br>Test Cases . Regression Testing . UAT</li>
+                            <li><span>API</span><br>Postman</li>
+                            <li><span>Tools</span><br>Jira . Confluence . GitHub</li>
+
+                        </ul>
+                       </div>
+                       <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2025 - Current</span><br>Test Analyst</li>
+                            <li><span>2024 - 2025</span><br>Junior Quality Assurance Automation Engineer</li>
+                        </ul>
+                       </div>
+                       <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2025</span><br>Diploma in Information Technology(Software Development)</li>
+                            <li><span>2024</span><br>Manual and Automation Testing Training at Intelliscient Technologies</li>
+                        </ul>
+                       </div>
+                    </div>
+                </div>
+            </div>
+     </div>
+    <!-- ------------portfolio----------  -->
+    <div id="portfolio">
+        <div class="container">
+            <div class="work-list">
+                <div class="work">
+                    <br>
+                    <img src="Images/WhatsApp Image 2025-11-15 at 17.55.29.jpeg">
+                    <div class="layer">
+                        <h3>Project 1</h3>
+                        <p>Selenium Automation Framework</p>
+                        <a href="https://github.com/LiyabonaPhilasande-Sobekwa/Testing-theHub" target="_blank">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                    </div>
+                </div>
+                <div class="work">
+                    <br>
+                    <img src="Images/WhatsApp Image 2025-11-15 at 17.55.29.jpeg">
+                    <div class="layer">
+                        <h3>Project 2</h3>
+                        <p>API Automation Framework</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <br>
+                    <img src="Images/WhatsApp Image 2025-11-15 at 17.55.29.jpeg">
+                    <div class="layer">
+                        <h3>Project 3</h3>
+                        <p>QA Documentation Portfolio</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------contact-------------->
+<div id="contact">
+    <div class="container">
+        <h1 class="sub-title">Contact Me</h1>
+
+        <div class="contact-info">
+            <p><i class="fa-solid fa-envelope"></i> liyabonasobekwa3@gmail.com</p>
+
+            <p>
+                <i class="fa-brands fa-linkedin"></i>
+                <a href="https://www.linkedin.com/in/liyabona-sobekwa-3948461b1" target="_blank">
+                    LinkedIn
+                </a>
+            </p>
+
+            <p>
+                <i class="fa-brands fa-github"></i>
+                <a href="https://github.com/LiyabonaPhilasande-Sobekwa" target="_blank">
+                    GitHub
+                </a>
+            </p>
+
+            <a href="CV/Liyabona_Sobekwa_CV.pdf" target="_blank" class="btn">
+                Download CV
+            </a>
+        </div>
+    </div>
+</div>
+<div class="copyright">
+    <p>© 2026 Liyabona Sobekwa. All Rights Reserved.</p>
+</div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>

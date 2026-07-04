@@ -1,0 +1,407 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #080808;
+    color: #fff;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(Images/WhatsApp\ Image\ 2025-11-15\ at\ 17.46.57.jpeg);
+    background-size: cover ;
+    background-position: center;
+}
+.container{
+    padding: 10px 10%;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(8, 8, 8, 0.021);
+    backdrop-filter: blur(0.5px);
+    z-index: 1000;
+    flex-wrap: wrap;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff00ae;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.05s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.header-text{
+    margin-top: 20%;
+    font-size: 20px;
+}
+
+.header-text h1{
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.header-text h1 span{
+    color: #ff00ae;
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    padding-top: 80px;
+    background-image: url(Images/WhatsApp\ Image\ 2025-11-15\ at\ 17.46.57.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+#about,
+#portfolio,
+#contact{
+    scroll-margin-top: 100px;
+}
+
+/*----------about----------*/
+#about{
+    padding:80px 0;
+    color:#ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+    
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-family: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff00ae;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: #b54769;
+    font-size: 14px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+
+/* -------------portfolio------------- */
+#portfolio{
+    padding: 50px 0;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    margin-top:50px;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+.layer{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.6), #ff00ae);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.layer a{
+    margin-top: 20px;
+    color: #ff00ae;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.btn{
+    display: inline-block;
+    padding: 12px 28px;
+    margin-right: 15px;
+    border: 2px solid #ff00ae;
+    border-radius: 30px;
+    background: #ff00ae;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    background: transparent;
+    color: #ff00ae;
+}
+
+#contact{
+    padding:80px 0;
+}
+
+.contact-info p{
+    margin:20px 0;
+    font-size:18px;
+}
+
+.contact-info p i{
+    color:#d46a92;
+    margin-right:12px;
+    font-size:20px;
+}
+
+.contact-info a{
+    color:#262626;
+    text-decoration:none;
+}
+
+.contact-info a:hover{
+    color:#d46a92;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 30px;
+    background:#d46a92;
+    color:#fff;
+    border-radius:30px;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#b9547d;
+}
+
+.copyright{
+    text-align:center;
+    padding:20px 0;
+    margin-top:50px;
+    background:#f7f7f7;
+    color:#555;
+    font-size:14px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+img{
+      max-width:100%;
+      height:auto;
+    }
+
+    .work img{
+      transition:transform .4s;
+    }
+
+    .work:hover img{
+      transform:scale(1.08);
+    }
+
+#about,
+#portfolio,
+#contact{
+    padding:80px 0;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.work{
+    box-shadow:0 8px 20px rgba(0,0,0,.3);
+}
+
+#about,
+#portfolio,
+#contact{
+    scroll-margin-top:100px;
+}
+
+
+/*==============================
+        MOBILE DEVICES
+===============================*/
+
+@media only screen and (max-width:768px){
+
+    .container{
+        padding:10px 6%;
+    }
+
+    nav{
+        padding:15px 6%;
+    }
+
+    nav ul{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    nav ul li{
+        margin:8px;
+    }
+
+    nav ul li a{
+        font-size:16px;
+    }
+
+    .header-text{
+        margin-top:55%;
+        font-size:18px;
+    }
+
+    .header-text h1{
+        font-size:34px;
+        line-height:1.3;
+    }
+
+    .sub-title{
+        font-size:38px;
+        text-align:center;
+    }
+
+    .row{
+        flex-direction:column;
+    }
+
+    .about-col-1,
+    .about-col-2{
+        flex-basis:100%;
+    }
+
+    .about-col-1 img{
+        width:80%;
+        display:block;
+        margin:0 auto 30px;
+    }
+
+    .tab-titles{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+    .tab-links{
+        margin:10px 20px;
+    }
+
+    .work-list{
+        grid-template-columns:1fr;
+        gap:30px;
+        margin-top:40px;
+    }
+
+    .contact-info{
+        text-align:center;
+    }
+
+    .btn{
+        display:block;
+        width:220px;
+        margin:20px auto;
+        text-align:center;
+    }
+
+}
